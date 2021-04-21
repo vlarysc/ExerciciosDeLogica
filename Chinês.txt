@@ -1,0 +1,45 @@
+valores = [1, 2, 3, 4, 5];
+valor = 0;
+
+i = 0
+valores[0] = valores[0] * 2
+valores[0] = 1 * 2
+valores = [2, 2, 3, 4, 5]
+valor = [2, 2, 3, 4, 5]
+
+i = 1
+valores[1] = valores[1] *2
+valores[1] = 2 * 2
+valores = [2, 4, 3, 4, 5]
+valor = [2, 4, 3, 4, 5]
+
+i = 2
+valores[2] = valores[2] * 2
+valores[2] = 3 * 2
+valores = [2, 4, 6, 4, 5] 
+valor = [2, 4, 6, 4, 5] 
+
+i = 3
+valores[3] = valores[3] * 2
+valores[3] = 4 * 2
+valores = [2, 4, 6, 8, 5]
+valor = [2, 4, 6, 8, 5]
+
+i = 4
+valores[4] = valores[4] * 2
+valores[4] = 5 * 2
+valores = [2, 4, 6, 8, 10]
+valor = [2, 4, 6, 8, 10]
+
+produtos = ["Pão",
+  "Presunto",
+  "Mussarela",
+  "Salame",
+  "Leite",
+  "Aveia"];
+produto = 0;
+
+i = 0
+produto = produtos[0]
+produto =  pão
+

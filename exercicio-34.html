@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>calculadora</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+      }
+
+      #calculator {
+        width: 200px;
+        background-image: linear-gradient(#d63636, #834e4e);
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+        margin: 15px auto;
+
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 5px;
+        grid-template-rows: auto repeat(5, 40px);
+      }
+
+      button {
+        padding: 0.25em;
+      }
+
+      #display {
+        padding: 10px;
+        font-size: 1.4em;
+        text-align: right;
+        background-image: linear-gradient(#7c5f5f, #e0e0e0);
+        box-shadow: inset 3px 2px 0 white;
+        margin-bottom: 15px;
+
+        grid-column: 1 / -1;
+      }
+
+      .mais {
+        background-color: #adadad;
+        grid-row: 5 / 7;
+        grid-column: 4 / 5;
+      }
+
+      .zero {
+        background-color: #adadad;
+        grid-column: 1 / 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="calculator">
+      <div id="display">0</div>
+
+      <button onclick="limpar()">AC</button>
+      <button onclick="obterPorcento()">%</button>
+      <button onclick="iniciarCalculo('*')">x</button>
+      <button onclick="iniciarCalculo('/')">/</button>
+      <button onclick="incluirDigito('7')">7</button>
+      <button onclick="incluirDigito('8')">8</button>
+      <button onclick="incluirDigito('9')">9</button>
+      <button onclick="finalizarCalculo()">=</button>
+      <button onclick="incluirDigito('4')">4</button>
+      <button onclick="incluirDigito('5')">5</button>
+      <button onclick="incluirDigito('6')">6</button>
+      <button onclick="iniciarCalculo('-')">-</button>
+      <button onclick="incluirDigito('1')">1</button>
+      <button onclick="incluirDigito('2')">2</button>
+      <button onclick="incluirDigito('3')">3</button>
+      <button onclick="iniciarCalculo('+')" class="mais">+</button>
+      <button class="zero" onclick="incluirDigito('0')">0</button>
+      <button onclick="incluirPonto()">,</button>
+    </div>
+
+    <!--	<img src="https://static.webshopapp.com/shops/038765/files/063260238/geeek-bamboo-wooden-calculator-calculator.jpg" style="width: 250px">-->
+    <script src="./exercicio-34.js"></script>
+  </body>
+</html>
