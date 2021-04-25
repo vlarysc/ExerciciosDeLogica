@@ -71,13 +71,26 @@ var enderecosAlunos = [
 ];
 
 var texto = "";
+var enderecos = [];
 
-var output = (document.querySelector("#output").innerHTML = texto);
+for (var i = 0; i < enderecosAlunos.length; i++) {
+  enderecos[i] = enderecosAlunos[i].endereco;
+}
 
-function arrayEnd(enderecosAlunos) {
-  var enderecos = [];
-  for (var i = 0; i < enderecosAlunos.length; i++) {
-    enderecos[i] = enderecosAlunos[i].endereco;
+for (var i = 0; i < enderecos.length; i++) {
+  var endereco = enderecos[i];
+
+  for (propriedade in endereco) {
+    texto =
+      texto +
+      "" +
+      (i + 1) +
+      "° Aluno " +
+      propriedade +
+      ": " +
+      endereco[propriedade] +
+      " <br>  ";
   }
-  return enderecos;
+  texto = texto + "<hr>";
+  document.querySelector("#output").innerHTML = texto;
 }
