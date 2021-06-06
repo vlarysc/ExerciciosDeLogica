@@ -3,10 +3,12 @@
 //Imprima o resultado na tela com console.log.
 
 var produtos = [3.9, 25.5, 100.99, 4.5];
+
 var nArray = [150.99, 90, 84.99];
 
 function somar_produtos(produtos) {
   var res = [];
+  res = parseFloat(res);
 
   for (var i = 0; i < produtos.length; i++) {
     produtos[i] = produtos[i].toFixed(2);
