@@ -12,6 +12,12 @@ function somar_produtos(produtos, nArray) {
     res.push(nArray[i]);
   }
 
+  for (let j = 0; j < res.length; j++) {
+    res[j] = res[j].toFixed(2);
+    res[j] = res[j].replace(".", ",");
+    res[j] = `R$ ${res[j]}`;
+  }
+
   return res;
 }
 
